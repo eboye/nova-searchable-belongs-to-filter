@@ -11,7 +11,7 @@ This package assumes you have a text-search setup for your Eloquent models. See 
 
 ### Installation
 
-`composer require suenerds/nova-searchable-belongs-to-filter`
+`composer require eboye/nova-searchable-belongs-to-filter`
 
 ### Usage
 
@@ -23,7 +23,7 @@ By default the filter will display the name of the `fieldAttribute` you passed o
 ```php
 // app/Nova/User.php
 
-use Suenerds\NovaSearchableBelongsToFilter\NovaSearchableBelongsToFilter
+use Eboye\NovaSearchableBelongsToFilter\NovaSearchableBelongsToFilter
 
 public function filters(Request $request)
 {

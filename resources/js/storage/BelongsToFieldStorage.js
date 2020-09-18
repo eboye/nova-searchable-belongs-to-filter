@@ -3,10 +3,10 @@ export default {
         return Nova.request().get(
             `/nova-api/${resourceName}/associatable/${fieldAttribute}`,
             params
-        )
+        );
     },
 
     determineIfSoftDeletes(resourceName) {
-        return Nova.request().get(`/nova-api/${resourceName}/soft-deletes`)
+        return Nova.request().get(`/nova-api/${resourceName}/soft-deletes`);
     },
-}
+};

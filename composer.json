@@ -1,11 +1,11 @@
 {
-    "name": "suenerds/nova-searchable-belongs-to-filter",
+    "name": "eboye/nova-searchable-belongs-to-filter",
     "description": "Searchable Nova filter for belongsTo relationships.",
     "keywords": [
         "laravel",
         "nova",
-	"filter",
-	"belongs-to"
+        "filter",
+        "belongs-to"
     ],
     "license": "MIT",
     "require": {
@@ -13,13 +13,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Suenerds\\NovaSearchableBelongsToFilter\\": "src/"
+            "Eboye\\NovaSearchableBelongsToFilter\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Suenerds\\NovaSearchableBelongsToFilter\\FilterServiceProvider"
+                "Eboye\\NovaSearchableBelongsToFilter\\FilterServiceProvider"
             ]
         }
     },
