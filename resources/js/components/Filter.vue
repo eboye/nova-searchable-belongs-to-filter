@@ -59,8 +59,8 @@
 
 <script>
 import {PerformsSearches} from "laravel-nova"
-import storage           from '../storage/BelongsToFieldStorage'
-import CustomSearchInput from "./CustomSearchInput";
+import storage            from '../storage/BelongsToFieldStorage'
+import CustomSearchInput  from "./CustomSearchInput";
 
 export default {
   components: {CustomSearchInput},
@@ -99,6 +99,7 @@ export default {
       });
 
       this.$emit("change");
+      this.$emit("filterChanged");
     },
   },
 

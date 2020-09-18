@@ -193,7 +193,7 @@ export default {
 
   mounted() {
     document.addEventListener('keydown', e => {
-      if (this.show && (e.keyCode == 9 || e.keyCode == 27)) {
+      if (this.show && (e.keyCode === 9 || e.keyCode === 27)) {
         setTimeout(() => this.close(), 50)
       }
     })
@@ -285,7 +285,7 @@ export default {
 
   computed: {
     shouldShowDropdownArrow() {
-      return this.value == '' || this.value == null || !this.clearable
+      return this.value === '' || this.value == null || !this.clearable
     },
   },
 }
