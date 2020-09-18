@@ -233,7 +233,7 @@ export default {
 
     updateScrollPosition() {
       Vue.nextTick(() => {
-        if (this.$refs.selected) {
+        if (this.$refs.selected && this.$refs.selected[0]) {
           if (
               this.$refs.selected[0].offsetTop >
               this.$refs.container.scrollTop +
