@@ -37,7 +37,6 @@
         <div
             slot="option"
             slot-scope="{ option, selected }"
-            @click="handleChange"
             class="flex items-center"
         >
           <div
@@ -102,6 +101,11 @@ export default {
       this.$emit("change");
       this.$emit("filterChanged");
     },
+  },
+  watch: {
+    value(value) {
+      this.handleChange(value);
+    }
   },
 
   computed: {
