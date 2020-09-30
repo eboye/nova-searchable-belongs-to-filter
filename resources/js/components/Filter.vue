@@ -25,9 +25,9 @@
               v-if="value.avatar"
               class="mr-3"
           >
-            <img
-                :src="value.avatar"
-                class="w-8 h-8 rounded-full block"
+            <img alt="avatar"
+                 :src="value.avatar"
+                 class="w-8 h-8 rounded-full block"
             />
           </div>
 
@@ -37,15 +37,16 @@
         <div
             slot="option"
             slot-scope="{ option, selected }"
+            @click="handleChange"
             class="flex items-center"
         >
           <div
               v-if="option.avatar"
               class="mr-3"
           >
-            <img
-                :src="option.avatar"
-                class="w-8 h-8 rounded-full block"
+            <img alt="avatar"
+                 :src="option.avatar"
+                 class="w-8 h-8 rounded-full block"
             />
           </div>
 
